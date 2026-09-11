@@ -10,7 +10,9 @@ public class BattleManager : MonoBehaviour
     private Hero _currentHero;
     private bool _isActiveTurn = false;
 
+#pragma warning disable CS0414
     private bool _isFightActive = false;
+#pragma warning restore CS0414
     [SerializeField] float _turnDelaySeconds = 0.75f;
 
     public delegate void ActiveTurnEvent(bool value);

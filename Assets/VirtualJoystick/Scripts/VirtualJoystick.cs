@@ -239,7 +239,7 @@ namespace Terresquall {
                         float adjustedRadius = radius * canvasScaleFactor;
 
                         return adjustedRadius;
-                    }-
+                    }
                 }
                 return radius * Mathf.Max(t.rect.width, t.rect.height) * 0.5f;
             }

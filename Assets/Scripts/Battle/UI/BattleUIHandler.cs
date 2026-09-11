@@ -31,7 +31,9 @@ public class BattleUIHandler : MonoBehaviour
 
     private Camera _camera;
     private bool _isSelectingEnemy = false;
+#pragma warning disable CS0414 
     private bool _isSelectingAlly = false;
+#pragma warning restore CS0414 
     private bool _isInSubMenu = false;
     private int _selectorIndex;
     private Ability _selectedAbility;
