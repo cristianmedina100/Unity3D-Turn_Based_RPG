@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
+
 
 public class TOUCHCAMERA : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        CinemachineCore.GetInputAxis = gitAxis;
+        Unity.Cinemachine.CinemachineCore.GetInputAxis = gitAxis;
     }
 
     // Update is called once per frame

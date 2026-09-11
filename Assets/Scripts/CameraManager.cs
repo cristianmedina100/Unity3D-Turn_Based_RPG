@@ -2,18 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
+
 using UnityEngine.Serialization;
 
 public class CameraManager : MonoBehaviour
 {
-    [SerializeField] CinemachineVirtualCamera _battleSceneCamera;
-    [SerializeField] CinemachineVirtualCamera _focusHeroCamera;
+    [SerializeField] Unity.Cinemachine.CinemachineVirtualCamera _battleSceneCamera;
+    [SerializeField] Unity.Cinemachine.CinemachineVirtualCamera _focusHeroCamera;
     [Header("Focus Group On Targeting Settings")]
     [SerializeField] float _targetFocusWeight = 1.0f;
     [SerializeField] float _otherFocusWeight = 1.5f;
-    [SerializeField] private CinemachineTargetGroup _battleSceneTargetGroup;
-    [SerializeField] private CinemachineTargetGroup _focusTargetGroup;
+    [SerializeField] private Unity.Cinemachine.CinemachineTargetGroup _battleSceneTargetGroup;
+    [SerializeField] private Unity.Cinemachine.CinemachineTargetGroup _focusTargetGroup;
     private bool _focusedOnGroup;
     private bool _isInitialized;
     
