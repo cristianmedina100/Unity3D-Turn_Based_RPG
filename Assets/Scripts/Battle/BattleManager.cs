@@ -32,6 +32,7 @@ public class BattleManager : MonoBehaviour
         if(Instance == null)
         {
             Instance = this;
+            
         }
         else
         {

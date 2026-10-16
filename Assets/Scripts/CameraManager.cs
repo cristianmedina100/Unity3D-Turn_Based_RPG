@@ -7,8 +7,8 @@ using UnityEngine.Serialization;
 
 public class CameraManager : MonoBehaviour
 {
-    [SerializeField] Unity.Cinemachine.CinemachineVirtualCamera _battleSceneCamera;
-    [SerializeField] Unity.Cinemachine.CinemachineVirtualCamera _focusHeroCamera;
+    [SerializeField] Unity.Cinemachine.CinemachineCamera _battleSceneCamera;
+    [SerializeField] Unity.Cinemachine.CinemachineCamera _focusHeroCamera;
     [Header("Focus Group On Targeting Settings")]
     [SerializeField] float _targetFocusWeight = 1.0f;
     [SerializeField] float _otherFocusWeight = 1.5f;
@@ -95,7 +95,7 @@ public class CameraManager : MonoBehaviour
         {
             foreach (var target in _focusTargetGroup.m_Targets)
             {
-                _focusTargetGroup.RemoveMember(target.target);
+                _focusTargetGroup.RemoveMember(target.Object);
             }
         }
         _focusHeroCamera.LookAt = null;
